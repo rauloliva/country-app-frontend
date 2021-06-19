@@ -1,0 +1,26 @@
+// country card
+.card {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    width: 400px;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    background-color: $secondary-color;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $secondary-color-darker;
+    }
+
+    &-flag {
+        width: 160px;
+        height: 110px;
+    }
+
+    &-description {
+        margin-left: 1rem;
+    }
+}

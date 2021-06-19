@@ -1,0 +1,26 @@
+.main {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &_image {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+.image {
+    &_left {
+        transform: translateX(50px);
+    }
+
+    &_center {
+        transform: translateY(50px);
+        z-index: 2000;
+    }
+
+    &_right {
+        transform: translateX(-50px);
+    }
+}

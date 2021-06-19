@@ -1,0 +1,25 @@
+.notFound {
+
+    &_container {
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+        flex-direction: column;
+        
+    }
+
+    &_image {
+        width: 350px;
+        height: 350px;
+    }
+
+    &_picture {
+        font-size: 5.5em;
+         text-shadow: 8px 5px 5px grey;
+    }
+
+    &_message {
+        margin-top: 2rem;
+        font-size: 1.4em;
+    }
+}

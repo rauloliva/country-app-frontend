@@ -1,0 +1,17 @@
+.errorMessage {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &_image {
+        width: 100px;
+        height: 100px;
+        margin: 0 1rem;
+    }
+
+    &_msg {
+        font-size: 1.6em;
+    }
+}

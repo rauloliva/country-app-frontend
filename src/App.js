@@ -11,31 +11,30 @@ const Page404 = lazy(() => import('./components/404'))
 const Main = lazy(() => import('./components/Main'))
 
 
-const App = () => {
-  return (
-    <Fragment>
-      <Suspense fallback={ <Loading/> }>
-        <Header />
-        
-        <Switch>
-          <Route path='/' exact>
-              <p className='main-title'>Get information about the countries of the world!</p>
-              <Search />
-              <Main />
-          </Route>
-          <Route path='/search' exact>
+
+const App = () => (
+  <Fragment>
+    <Suspense fallback={ <Loading/> }>
+      <Header />
+      
+      <Switch>
+        <Route path='/' exact>
+            <p className='main-title'>Get information about the countries of the world!</p>
             <Search />
-          </Route>
-          <Route path='/info'>
-            <InfoCard />
-          </Route>
-          <Route>
-            <Page404 />
-          </Route>
-        </Switch>
-      </Suspense>
-    </Fragment>
-  )
-}
+            <Main />
+        </Route>
+        <Route path='/search' exact>
+          <Search />
+        </Route>
+        <Route path='/info'>
+          <InfoCard />
+        </Route>
+        <Route>
+          <Page404 />
+        </Route>
+      </Switch>
+    </Suspense>
+  </Fragment>
+)
 
 export default App
